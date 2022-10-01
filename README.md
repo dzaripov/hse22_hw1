@@ -54,17 +54,17 @@ multiqc -o trimmed_multiqc trimmed_fastqc
 
 ДО:
 
-![alt](./images/1_1.png)
-![alt](./images/1_2.png)
-![alt](./images/1_3.png)
-![alt](./images/1_4.png)
+![alt](./img/1_1.png)
+![alt](./img/1_2.png)
+![alt](./img/1_3.png)
+![alt](./img/1_4.png)
 
 ПОСЛЕ:
 
-![alt](./images/2_1.png)
-![alt](./images/2_2.png)
-![alt](./images/2_3.png)
-![alt](./images/2_4.png)
+![alt](./img/2_1.png)
+![alt](./img/2_2.png)
+![alt](./img/2_3.png)
+![alt](./img/2_4.png)
 
 7) Cобираем контиги из подрезанных чтений:
 ```
@@ -78,7 +78,7 @@ time platanus scaffold -o Poil -c Poil_contig.fa -IP1 trimmed_fastq/R1_paired_en
 
 9) Анализ полученных контигов и скаффолдов:
 
-![alt](./images/9.png)
+![alt](./img/9.png)
 
 10) Создаем файл с самым длинным скаффолдом: 
 ```
@@ -99,8 +99,8 @@ seqtk subseq Poil_gapClosed.fa longest_scaffold_gapclosed.txt > longest_scaffold
 
 13) Сравним полученные данные о гэпах в самом большом скаффолде до и после использования platanus gap_close
 
-![alt](./images/13.png)
+![alt](./img/13.png)
 
 14) Повторяем все действия для меньшего количества чтений (5 млн => 1 млн, 1.5 млн => 300 тыс.)
 
-![alt](./images/14.png)
+![alt](./img/14.png)
